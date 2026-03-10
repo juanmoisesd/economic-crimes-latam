@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#0d1117;color:#c9d1d9;font-family:'Segoe UI',Arial,sans-serif;line-height:1.7}
+a{color:#58a6ff;text-decoration:none}a:hover{text-decoration:underline}
+nav{background:#161b22;border-bottom:1px solid #30363d;padding:10px 20px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+nav .logo{font-weight:700;font-size:1.1em;color:#f0f6fc;margin-right:12px;white-space:nowrap}
+nav a{color:#8b949e;font-size:.82em;padding:4px 8px;border-radius:4px;white-space:nowrap}
+nav a:hover,nav a.active{background:#21262d;color:#58a6ff;text-decoration:none}
+.container{max-width:1100px;margin:0 auto;padding:24px 20px}
+h1{font-size:2em;color:#f0f6fc;margin-bottom:8px}
+h2{font-size:1.4em;color:#e6edf3;margin:28px 0 12px;border-bottom:1px solid #30363d;padding-bottom:6px}
+h3{font-size:1.1em;color:#cdd9e5;margin:18px 0 8px}
+.subtitle{color:#8b949e;font-size:1.05em;margin-bottom:20px}
+.badge{display:inline-block;background:#21262d;border:1px solid #30363d;border-radius:20px;padding:3px 12px;font-size:.8em;color:#8b949e;margin:0 4px 4px 0}
+.abstract{background:#161b22;border-left:4px solid #58a6ff;border-radius:0 8px 8px 0;padding:18px 20px;margin:20px 0;font-size:.97em}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin:20px 0}
+.kpi{background:#161b22;border:1px solid #30363d;border-radius:10px;padding:16px;text-align:center}
+.kpi .val{font-size:2em;font-weight:700;color:#58a6ff}
+.kpi .lbl{font-size:.82em;color:#8b949e;margin-top:4px}
+.chart-wrap{background:#161b22;border:1px solid #30363d;border-radius:10px;padding:16px;margin:16px 0}
+.citation{background:#161b22;border:1px solid #30363d;border-radius:8px;padding:18px;margin:20px 0;font-size:.85em}
+.citation pre{background:#0d1117;border-radius:6px;padding:12px;overflow-x:auto;white-space:pre-wrap;font-size:.9em;color:#7ee787}
+table{width:100%;border-collapse:collapse;font-size:.88em;margin:10px 0}
+th{background:#21262d;color:#cdd9e5;padding:10px 8px;text-align:left;border-bottom:2px solid #30363d}
+td{padding:8px 8px;border-bottom:1px solid #21262d;color:#8b949e}
+tr:hover td{background:#161b22;color:#c9d1d9}
+footer{background:#161b22;border-top:1px solid #30363d;padding:20px;text-align:center;color:#484f58;font-size:.85em;margin-top:40px}
+@media(max-width:600px){h1{font-size:1.4em}.kpi .val{font-size:1.5em}}
+</style>
+<title>Metodología — Delitos Económicos en América Latina 2020-2023</title>
+<meta name="description" content="Metodología del dataset sobre delitos económicos en América Latina 2020-2023. Fuentes, variables y proceso de construcción del dataset.">
+</head>
+<body>
+<nav><span class="logo">🔍 Delitos Económicos LATAM</span><a href="index.html" >🏠 Inicio</a><a href="corrupcion.html" >🔴 Corrupción</a><a href="evasion.html" >💸 Evasión Fiscal</a><a href="lavado.html" >🌊 Lavado Dinero</a><a href="fraude.html" >🎭 Fraude</a><a href="crimen-organizado.html" >⚫ Crimen Org.</a><a href="cono-sur.html" >🗺 Cono Sur</a><a href="andina.html" >🗺 Andina</a><a href="centroamerica.html" >🗺 Centroamérica</a><a href="caribe.html" >🗺 Caribe</a><a href="argentina.html" >🇦🇷</a><a href="brasil.html" >🇧🇷</a><a href="mexico.html" >🇲🇽</a><a href="colombia.html" >🇨🇴</a><a href="chile.html" >🇨🇱</a><a href="venezuela.html" >🇻🇪</a><a href="peru.html" >🇵🇪</a><a href="ecuador.html" >🇪🇨</a><a href="bolivia.html" >🇧🇴</a><a href="paraguay.html" >🇵🇾</a><a href="uruguay.html" >🇺🇾</a><a href="guatemala.html" >🇬🇹</a><a href="honduras.html" >🇭🇳</a><a href="el-salvador.html" >🇸🇻</a><a href="costa-rica.html" >🇨🇷</a><a href="tendencias.html" >📈 Tendencias</a><a href="comparaciones.html" >⚖️ Comparativas</a><a href="methodology.html" class="active">📋 Metodología</a><a href="data.html" >📊 Datos</a><a href="sitemap.html" >🗺 Sitemap</a></nav>
+<div class="container">
+<h1>📋 Metodología del Dataset</h1>
+<p class="subtitle">Fuentes, Variables y Proceso de Construcción del Dataset</p>
+<div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px">
+<span class="badge">🏦 Harvard Dataverse</span><span class="badge">DOI: 10.7910/DVN/HSSJ0O</span>
+<span class="badge">CC0 1.0</span>
+</div>
+
+<div class="abstract">
+<strong>Descripción:</strong> Este dataset reúne información sobre cinco categorías de delitos económicos en 20 países de América Latina para el período 2020-2023. Los datos provienen de organismos internacionales de referencia en cada categoría, garantizando la comparabilidad entre países y períodos.
+</div>
+
+<h2>Cobertura Geográfica y Temporal</h2>
+<p>El dataset cubre 20 países de América Latina y el Caribe: Argentina, Bolivia, Brasil, Chile, Colombia, Costa Rica, Cuba, Ecuador, El Salvador, Guatemala, Haití, Honduras, México, Nicaragua, Panamá, Paraguay, Perú, República Dominicana, Uruguay y Venezuela. El período de análisis comprende cuatro años: 2020, 2021, 2022 y 2023, generando 80 observaciones por variable (20 países × 4 años).</p>
+
+<h2>Variables y Fuentes</h2>
+<table><thead><tr><th>Variable</th><th>Descripción</th><th>Fuente</th><th>Escala</th></tr></thead>
+<tbody>
+<tr><td><strong>CPI</strong></td><td>Índice de Percepción de la Corrupción</td><td>Transparencia Internacional</td><td>0-100 (100=sin corrupción)</td></tr>
+<tr><td><strong>Evasión Fiscal</strong></td><td>Evasión tributaria estimada como % del PIB</td><td>Global Financial Integrity (GFI) + BID</td><td>% del PIB</td></tr>
+<tr><td><strong>Riesgo Lavado</strong></td><td>Nivel de riesgo de lavado de dinero FATF/GAFI</td><td>Financial Action Task Force (FATF/GAFI)</td><td>1=Bajo, 2=Medio-Bajo, 3=Medio-Alto, 4=Alto</td></tr>
+<tr><td><strong>Fraude</strong></td><td>% de empresas que reportaron fraude económico</td><td>PwC Global Economic Crime Survey</td><td>% empresas afectadas</td></tr>
+<tr><td><strong>Riesgo CO</strong></td><td>Nivel de riesgo crimen organizado económico</td><td>UNODC</td><td>1=Bajo, 2=Medio-Bajo, 3=Medio-Alto, 4=Alto</td></tr>
+<tr><td><strong>Homicidios</strong></td><td>Tasa de homicidios dolosos por 100,000 habitantes</td><td>UNODC Global Study on Homicide</td><td>Tasa por 100,000 hab.</td></tr>
+</tbody></table>
+
+<h2>Proceso de Construcción</h2>
+<p>El dataset fue construido mediante la recopilación sistemática de informes anuales de los organismos citados. Para el CPI, se consultaron los Corruption Perceptions Index de Transparencia Internacional 2020-2023. Para la evasión fiscal, se triangularon estimaciones del Global Financial Integrity y publicaciones del BID sobre flujos financieros ilícitos en América Latina. Los niveles de riesgo de lavado de dinero se extrajeron de las evaluaciones mutuas FATF/GAFI y de los informes del Basel AML Index. Los datos de fraude empresarial provienen del PwC Global Economic Crime Survey, ponderados por cobertura geográfica cuando la muestra regional fue insuficiente. Las tasas de homicidio corresponden a las estadísticas oficiales recopiladas por la UNODC, complementadas con datos nacionales cuando hubo lagunas en años específicos.</p>
+
+<h2>Limitaciones</h2>
+<p>Las variables de riesgo (Riesgo Lavado y Riesgo CO) son estimaciones ordinales, no métricas continuas, lo que limita su uso en análisis estadísticos paramétricos. La evasión fiscal es por naturaleza una variable inobservable cuya estimación depende de la metodología usada por cada organismo. Los datos de fraude empresarial están basados en encuestas y pueden reflejar sesgos de respuesta, especialmente en países con menor cultura de reporte de delitos económicos. Se recomienda interpretar los datos con cautela para países donde la fuente primaria tuvo cobertura limitada (Haití, Cuba, Nicaragua).</p>
+
+<h2>Licencia y Uso</h2>
+<p>El dataset está publicado bajo licencia CC0 1.0 (dominio público), lo que permite su uso sin restricciones para investigación, educación y aplicaciones comerciales. Se solicita como cortesía académica la cita del dataset según el formato APA o BibTeX indicado en cada página.</p>
+
+<div class="citation"><h3>Cómo citar</h3><p><strong>APA:</strong> de la Serna, J. M. (2024). Delitos Económicos por Categoría en América Latina (2020-2023). Harvard Dataverse. https://doi.org/10.7910/DVN/HSSJ0O</p><pre>@dataset{delaserna2024,
+  author={de la Serna, Juan Moises},
+  title={Delitos Económicos por Categoría en América Latina (2020-2023)},
+  year={2024},
+  publisher={Harvard Dataverse},
+  doi={10.7910/DVN/HSSJ0O},
+  url={https://doi.org/10.7910/DVN/HSSJ0O}
+}</pre></div>
+<footer><p>DOI: <a href="https://doi.org/10.7910/DVN/HSSJ0O" target="_blank">10.7910/DVN/HSSJ0O</a> &nbsp;|&nbsp; Autor: de la Serna, J. M. (UNIR) &nbsp;|&nbsp; Licencia: CC0 1.0 &nbsp;|&nbsp; Datos: Harvard Dataverse</p></footer>
+</div>
+</body></html>
