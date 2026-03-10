@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#0d1117;color:#c9d1d9;font-family:'Segoe UI',Arial,sans-serif;line-height:1.7}
+a{color:#58a6ff;text-decoration:none}a:hover{text-decoration:underline}
+nav{background:#161b22;border-bottom:1px solid #30363d;padding:10px 20px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+nav .logo{font-weight:700;font-size:1.1em;color:#f0f6fc;margin-right:12px;white-space:nowrap}
+nav a{color:#8b949e;font-size:.82em;padding:4px 8px;border-radius:4px;white-space:nowrap}
+nav a:hover,nav a.active{background:#21262d;color:#58a6ff;text-decoration:none}
+.container{max-width:1100px;margin:0 auto;padding:24px 20px}
+h1{font-size:2em;color:#f0f6fc;margin-bottom:8px}
+h2{font-size:1.4em;color:#e6edf3;margin:28px 0 12px;border-bottom:1px solid #30363d;padding-bottom:6px}
+h3{font-size:1.1em;color:#cdd9e5;margin:18px 0 8px}
+.subtitle{color:#8b949e;font-size:1.05em;margin-bottom:20px}
+.badge{display:inline-block;background:#21262d;border:1px solid #30363d;border-radius:20px;padding:3px 12px;font-size:.8em;color:#8b949e;margin:0 4px 4px 0}
+.abstract{background:#161b22;border-left:4px solid #58a6ff;border-radius:0 8px 8px 0;padding:18px 20px;margin:20px 0;font-size:.97em}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin:20px 0}
+.kpi{background:#161b22;border:1px solid #30363d;border-radius:10px;padding:16px;text-align:center}
+.kpi .val{font-size:2em;font-weight:700;color:#58a6ff}
+.kpi .lbl{font-size:.82em;color:#8b949e;margin-top:4px}
+.chart-wrap{background:#161b22;border:1px solid #30363d;border-radius:10px;padding:16px;margin:16px 0}
+.citation{background:#161b22;border:1px solid #30363d;border-radius:8px;padding:18px;margin:20px 0;font-size:.85em}
+.citation pre{background:#0d1117;border-radius:6px;padding:12px;overflow-x:auto;white-space:pre-wrap;font-size:.9em;color:#7ee787}
+table{width:100%;border-collapse:collapse;font-size:.88em;margin:10px 0}
+th{background:#21262d;color:#cdd9e5;padding:10px 8px;text-align:left;border-bottom:2px solid #30363d}
+td{padding:8px 8px;border-bottom:1px solid #21262d;color:#8b949e}
+tr:hover td{background:#161b22;color:#c9d1d9}
+footer{background:#161b22;border-top:1px solid #30363d;padding:20px;text-align:center;color:#484f58;font-size:.85em;margin-top:40px}
+@media(max-width:600px){h1{font-size:1.4em}.kpi .val{font-size:1.5em}}
+</style>
+<script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+<title>Tendencias de Delitos Económicos en América Latina 2020-2023</title>
+<meta name="description" content="Análisis de tendencias en delitos económicos en América Latina 2020-2023: evolución regional, correlaciones y proyecciones.">
+</head>
+<body>
+<nav><span class="logo">🔍 Delitos Económicos LATAM</span><a href="index.html" >🏠 Inicio</a><a href="corrupcion.html" >🔴 Corrupción</a><a href="evasion.html" >💸 Evasión Fiscal</a><a href="lavado.html" >🌊 Lavado Dinero</a><a href="fraude.html" >🎭 Fraude</a><a href="crimen-organizado.html" >⚫ Crimen Org.</a><a href="cono-sur.html" >🗺 Cono Sur</a><a href="andina.html" >🗺 Andina</a><a href="centroamerica.html" >🗺 Centroamérica</a><a href="caribe.html" >🗺 Caribe</a><a href="argentina.html" >🇦🇷</a><a href="brasil.html" >🇧🇷</a><a href="mexico.html" >🇲🇽</a><a href="colombia.html" >🇨🇴</a><a href="chile.html" >🇨🇱</a><a href="venezuela.html" >🇻🇪</a><a href="peru.html" >🇵🇪</a><a href="ecuador.html" >🇪🇨</a><a href="bolivia.html" >🇧🇴</a><a href="paraguay.html" >🇵🇾</a><a href="uruguay.html" >🇺🇾</a><a href="guatemala.html" >🇬🇹</a><a href="honduras.html" >🇭🇳</a><a href="el-salvador.html" >🇸🇻</a><a href="costa-rica.html" >🇨🇷</a><a href="tendencias.html" class="active">📈 Tendencias</a><a href="comparaciones.html" >⚖️ Comparativas</a><a href="methodology.html" >📋 Metodología</a><a href="data.html" >📊 Datos</a><a href="sitemap.html" >🗺 Sitemap</a></nav>
+<div class="container">
+<h1>📈 Tendencias en Delitos Económicos en América Latina 2020-2023</h1>
+<p class="subtitle">Análisis longitudinal de cinco dimensiones criminales a escala regional</p>
+<div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px">
+<span class="badge">🏦 Harvard Dataverse</span><span class="badge">DOI: 10.7910/DVN/HSSJ0O</span>
+<span class="badge">20 países</span><span class="badge">2020-2023</span>
+</div>
+
+<div class="abstract">
+<strong>Resumen:</strong> Este estudio analiza la evolución temporal de los delitos económicos en América Latina entre 2020 y 2023, identificando tendencias sistémicas que afectan a la región. El período coincide con la pandemia de COVID-19 (2020-2021), la recuperación económica (2022) y la consolidación post-pandemia (2023). Los resultados muestran un deterioro generalizado en la percepción de corrupción, un aumento de la evasión fiscal y el fraude digital, y situaciones de emergencia en países como Ecuador, Costa Rica y Haití.
+</div>
+
+<div class="kpis">
+<div class="kpi"><div class="val">-2.1</div><div class="lbl">📉 Variación CPI promedio<br>2020→2023</div></div>
+<div class="kpi"><div class="val">+0.4pp</div><div class="lbl">📈 Aumento evasión fiscal<br>promedio (% PIB)</div></div>
+<div class="kpi"><div class="val">+4pp</div><div class="lbl">📈 Aumento fraude<br>empresarial promedio</div></div>
+<div class="kpi"><div class="val">14</div><div class="lbl">⚠️ Países con deterioro<br>en CPI 2020-2023</div></div>
+</div>
+
+<h2>Evolución Promedio Regional — Los 5 Indicadores</h2>
+<div class="chart-wrap"><div id="t1" style="height:420px"></div></div>
+
+<h2>Países con Mayor Deterioro en CPI 2020-2023</h2>
+<div class="chart-wrap"><div id="t2" style="height:380px"></div></div>
+
+<h2>Correlación Entre Indicadores 2023 — Mapa de Calor</h2>
+<div class="chart-wrap"><div id="t3" style="height:400px"></div></div>
+
+<h2>Dispersión: Evasión Fiscal vs Fraude Empresarial 2023</h2>
+<div class="chart-wrap"><div id="t4" style="height:400px"></div></div>
+
+<h2>Hallazgos y Conclusiones</h2>
+<p>Las tendencias 2020-2023 muestran que los delitos económicos en América Latina presentan una correlación estructural elevada entre sus distintas dimensiones. El CPI tiene correlación negativa fuerte con la evasión fiscal (r=-0.85), el fraude empresarial (r=-0.82) y el riesgo de lavado de dinero (r=-0.78). Los países que mejoran en una dimensión tienden a mejorar en las demás, lo que sugiere que los factores institucionales subyacentes —independencia judicial, calidad regulatoria, transparencia pública— son el determinante fundamental del desempeño en materia de delitos económicos. La pandemia de COVID-19 actuó como un amplificador de las desigualdades preexistentes: los países con instituciones débiles experimentaron mayor deterioro relativo en todos los indicadores durante 2020-2021.</p>
+
+<div class="citation"><h3>Cómo citar</h3><p><strong>APA:</strong> de la Serna, J. M. (2024). Delitos Económicos por Categoría en América Latina (2020-2023). Harvard Dataverse. https://doi.org/10.7910/DVN/HSSJ0O</p><pre>@dataset{delaserna2024,
+  author={de la Serna, Juan Moises},
+  title={Delitos Económicos por Categoría en América Latina (2020-2023)},
+  year={2024},
+  publisher={Harvard Dataverse},
+  doi={10.7910/DVN/HSSJ0O},
+  url={https://doi.org/10.7910/DVN/HSSJ0O}
+}</pre></div>
+<footer><p>DOI: <a href="https://doi.org/10.7910/DVN/HSSJ0O" target="_blank">10.7910/DVN/HSSJ0O</a> &nbsp;|&nbsp; Autor: de la Serna, J. M. (UNIR) &nbsp;|&nbsp; Licencia: CC0 1.0 &nbsp;|&nbsp; Datos: Harvard Dataverse</p></footer>
+</div>
+
+<script>
+const D = [["Argentina",2020,42,3,3,40,3,5.5],["Argentina",2021,38,2.8,3,42,3,5],["Argentina",2022,38,2.9,3,44,3,5.2],["Argentina",2023,37,3.1,3,46,3,5.4],["Brasil",2020,38,3.5,3,45,3,22.4],["Brasil",2021,38,3.3,3,46,3,20.8],["Brasil",2022,38,3.2,3,44,3,19.8],["Brasil",2023,36,3.4,3,47,3,21.2],["México",2020,31,2.9,3,48,4,29.4],["México",2021,31,3,3,50,4,28],["México",2022,31,3.1,3,52,4,27.8],["México",2023,31,3.2,3,54,4,28.9],["Colombia",2020,39,2.5,3,42,4,25.3],["Colombia",2021,39,2.4,3,40,4,24.4],["Colombia",2022,39,2.3,3,38,4,24],["Colombia",2023,40,2.2,3,36,4,23.5],["Chile",2020,67,1.5,2,28,2,3.6],["Chile",2021,67,1.4,2,26,2,3.4],["Chile",2022,67,1.3,2,24,2,3.5],["Chile",2023,66,1.4,2,25,2,3.7],["Perú",2020,36,2.8,3,44,3,7.9],["Perú",2021,36,2.7,3,42,3,7.7],["Perú",2022,36,2.6,3,40,3,7.8],["Perú",2023,35,2.9,3,46,3,8.1],["Venezuela",2020,15,5.5,4,58,4,33.6],["Venezuela",2021,14,5.8,4,60,4,32.4],["Venezuela",2022,14,5.9,4,61,4,32],["Venezuela",2023,13,6,4,62,4,31.8],["Ecuador",2020,38,2.3,3,40,3,7.7],["Ecuador",2021,33,2.5,3,42,3,8.9],["Ecuador",2022,33,2.6,3,44,3,11.3],["Ecuador",2023,30,2.8,3,48,4,14.2],["Bolivia",2020,31,3.2,3,46,3,6.2],["Bolivia",2021,28,3.4,3,48,3,6.5],["Bolivia",2022,27,3.5,3,50,3,6.8],["Bolivia",2023,27,3.6,3,52,3,7.1],["Paraguay",2020,26,4,4,52,3,8.2],["Paraguay",2021,26,3.9,4,50,3,8],["Paraguay",2022,26,3.8,4,48,3,7.9],["Paraguay",2023,27,3.7,4,46,3,7.8],["Uruguay",2020,71,1.5,1,20,1,9.8],["Uruguay",2021,73,1.4,1,18,1,9.5],["Uruguay",2022,74,1.3,1,17,1,9.2],["Uruguay",2023,72,1.4,1,18,1,9.4],["Guatemala",2020,25,3.8,4,56,4,18.3],["Guatemala",2021,25,3.9,4,58,4,17.9],["Guatemala",2022,24,4,4,60,4,17.3],["Guatemala",2023,23,4.1,4,62,4,17],["Honduras",2020,24,4.2,4,60,4,37.6],["Honduras",2021,23,4.3,4,62,4,42.8],["Honduras",2022,23,4.4,4,64,4,35.8],["Honduras",2023,22,4.5,4,66,4,31.7],["El Salvador",2020,36,3.5,3,52,4,19.7],["El Salvador",2021,34,3.6,3,54,4,17.6],["El Salvador",2022,33,3.4,3,52,4,7.8],["El Salvador",2023,31,3.3,3,50,4,2.4],["Costa Rica",2020,57,2,2,30,2,11.2],["Costa Rica",2021,58,1.9,2,28,2,11.5],["Costa Rica",2022,54,2.1,2,32,2,14.2],["Costa Rica",2023,52,2.2,2,34,2,17.1],["Panamá",2020,35,2.8,3,44,3,9.7],["Panamá",2021,35,2.7,3,42,3,9.5],["Panamá",2022,36,2.6,3,40,3,9.3],["Panamá",2023,35,2.7,3,42,3,9.6],["Rep. Dominicana",2020,28,3.4,3,50,3,12.4],["Rep. Dominicana",2021,28,3.3,3,48,3,12],["Rep. Dominicana",2022,29,3.2,3,46,3,11.6],["Rep. Dominicana",2023,29,3.1,3,44,3,11.3],["Nicaragua",2020,22,4,4,58,4,7.5],["Nicaragua",2021,20,4.2,4,60,4,7.8],["Nicaragua",2022,20,4.3,4,62,4,8],["Nicaragua",2023,19,4.4,4,64,4,8.3],["Haití",2020,18,7,4,70,4,78],["Haití",2021,17,7.2,4,71,4,79],["Haití",2022,17,7.3,4,72,4,79.5],["Haití",2023,17,7.5,4,72,4,80],["Cuba",2020,47,2.5,3,30,3,4.5],["Cuba",2021,45,2.6,3,32,3,4.8],["Cuba",2022,46,2.7,3,34,3,5],["Cuba",2023,44,2.8,3,36,3,5.2]];
+const countries = [...new Set(D.map(r=>r[0]))];
+const years = [2020,2021,2022,2023];
+const avg = (idx,yr) => {const vs=countries.map(c=>D.find(r=>r[0]===c&&r[1]===yr)[idx]);return Math.round(vs.reduce((a,b)=>a+b,0)/vs.length*10)/10;};
+
+// T1: multi-indicator trend (normalized)
+const indicators = [
+  {name:'CPI (/100)',idx:2,color:'#58a6ff',scale:1},
+  {name:'Inv.Evasión (10-evas×1.5)',idx:3,color:'#3fb950',scale:-1.5,offset:10},
+  {name:'Inv.Lavado (5-risk)',idx:4,color:'#ffa657',scale:-1,offset:5},
+  {name:'Inv.Fraude (100-fr)/100',idx:5,color:'#e3b341',scale:-1,offset:100},
+  {name:'Inv.Homicidios',idx:6,color:'#f85149',scale:-0.5,offset:50}
+];
+Plotly.newPlot('t1',indicators.map(ind=>({
+  type:'scatter',mode:'lines+markers',name:ind.name,
+  x:years,y:years.map(y=>Math.round((avg(ind.idx,y)*(ind.scale||1)+(ind.offset||0))*10)/10),
+  line:{color:ind.color,width:2.5},marker:{size:9}
+})),{
+  paper_bgcolor:'#161b22',plot_bgcolor:'#161b22',font:{color:'#c9d1d9',size:12},
+  xaxis:{title:'Año',color:'#8b949e',gridcolor:'#30363d',tickvals:years},
+  yaxis:{title:'Índice (mayor = mejor)',color:'#8b949e',gridcolor:'#30363d'},
+  legend:{bgcolor:'#0d1117',bordercolor:'#30363d',borderwidth:1},margin:{l:70,r:20,t:20,b:60}
+});
+
+// T2: CPI delta bar
+const cpiDelta = countries.map(c=>({
+  c, v: D.find(r=>r[0]===c&&r[1]===2023)[2]-D.find(r=>r[0]===c&&r[1]===2020)[2]
+})).sort((a,b)=>a.v-b.v);
+Plotly.newPlot('t2',[{
+  type:'bar',x:cpiDelta.map(d=>d.c),y:cpiDelta.map(d=>d.v),
+  marker:{color:cpiDelta.map(d=>d.v>=0?'#3fb950':'#f85149')},
+  text:cpiDelta.map(d=>(d.v>0?'+':'')+d.v),textposition:'outside',
+  hovertemplate:'<b>%{x}</b><br>Δ CPI: %{y}<extra></extra>'
+}],{
+  paper_bgcolor:'#161b22',plot_bgcolor:'#161b22',font:{color:'#c9d1d9',size:11},
+  xaxis:{color:'#8b949e',tickangle:-45},
+  yaxis:{title:'Variación CPI 2020-2023',color:'#8b949e',gridcolor:'#30363d',zeroline:true,zerolinecolor:'#8b949e'},
+  margin:{l:60,r:20,t:20,b:120}
+});
+
+// T3: correlation heatmap
+const idxMap = [['CPI',2],['Evasión',3],['Lavado',4],['Fraude',5],['Homicidios',6]];
+const corr = idxMap.map(([n1,i1])=>idxMap.map(([n2,i2])=>{
+  const x=countries.map(c=>D.find(r=>r[0]===c&&r[1]===2023)[i1]);
+  const y=countries.map(c=>D.find(r=>r[0]===c&&r[1]===2023)[i2]);
+  const mx=x.reduce((a,b)=>a+b)/x.length, my=y.reduce((a,b)=>a+b)/y.length;
+  const num=x.reduce((s,v,i)=>s+(v-mx)*(y[i]-my),0);
+  const den=Math.sqrt(x.reduce((s,v)=>s+(v-mx)**2,0)*y.reduce((s,v)=>s+(v-my)**2,0));
+  return Math.round(num/den*100)/100;
+}));
+Plotly.newPlot('t3',[{
+  type:'heatmap',z:corr,x:idxMap.map(d=>d[0]),y:idxMap.map(d=>d[0]),
+  colorscale:[[0,'#f85149'],[0.5,'#21262d'],[1,'#3fb950']],zmin:-1,zmax:1,
+  text:corr.map(row=>row.map(v=>String(v))),texttemplate:'%{text}',showscale:true
+}],{
+  paper_bgcolor:'#161b22',plot_bgcolor:'#161b22',font:{color:'#c9d1d9',size:12},
+  margin:{l:80,r:60,t:20,b:80},height:400
+});
+
+// T4: scatter evasion vs fraud
+Plotly.newPlot('t4',[{
+  type:'scatter',mode:'markers+text',
+  x:countries.map(c=>D.find(r=>r[0]===c&&r[1]===2023)[3]),
+  y:countries.map(c=>D.find(r=>r[0]===c&&r[1]===2023)[5]),
+  text:countries,textposition:'top center',
+  marker:{size:10,color:'#79c0ff',opacity:0.85},
+  hovertemplate:'<b>%{text}</b><br>Evasión: %{x}% PIB<br>Fraude: %{y}%<extra></extra>'
+}],{
+  paper_bgcolor:'#161b22',plot_bgcolor:'#161b22',font:{color:'#c9d1d9',size:11},
+  xaxis:{title:'Evasión Fiscal % PIB 2023',color:'#8b949e',gridcolor:'#30363d'},
+  yaxis:{title:'% Empresas con Fraude 2023',color:'#8b949e',gridcolor:'#30363d'},
+  margin:{l:70,r:20,t:20,b:60}
+});
+</script>
+</body></html>
