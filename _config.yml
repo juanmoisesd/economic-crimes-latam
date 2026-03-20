@@ -1,0 +1,18 @@
+title: "Economic Crimes in Latin America Dashboard"
+description: "Interactive dashboard: Economic crimes in Latin America (2020-2023). Corruption, Money Laundering, Tax Evasion, Fraud, Organized Crime. 20 countries. "
+author: "Juan Moisés de la Serna Tuya"
+url: "https://juanmoisesd.github.io"
+baseurl: "/economic-crimes-latam"
+theme: minima
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+social:
+  name: Juan Moisés de la Serna Tuya
+  links:
+    - https://orcid.org/0000-0002-8401-8018
+    - https://juanmoisesdelaserna.es
+    - https://github.com/juanmoisesd
+doi: 10.7910/DVN/8FXZOJ
+show_excerpts: true
