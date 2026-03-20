@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite it using the metadata below."
+type: dataset
+title: "Economic Crimes in Latin America Dashboard"
+authors:
+  - family-names: "de la Serna Tuya"
+    given-names: "Juan Moisés"
+    orcid: "https://orcid.org/0000-0002-8401-8018"
+    affiliation: "Universidad Internacional de La Rioja (UNIR)"
+    email: "juanmoises.delaserna@unir.net"
+doi: 10.7910/DVN/8FXZOJ
+url: https://doi.org/10.7910/DVN/8FXZOJ
+repository-code: "https://github.com/juanmoisesd/economic-crimes-latam"
+license: CC0-1.0
+date-released: "2026-03-20"
+keywords:
+  - "economic-crimes"
+  - "latin-america"
+  - "corruption"
+  - "dashboard"
+  - "open-data"
+  - "harvard-dataverse"
+abstract: "Interactive dashboard: Economic crimes in Latin America (2020-2023). Corruption, Money Laundering, Tax Evasion, Fraud, Organized Crime. 20 countries. DOI: 10.7910/DVN/8FXZOJ"
