@@ -1,0 +1,19 @@
+{
+  "title": "Interactive dashboard: Economic crimes in Latin America (2020-2023). Corruption, Money Laundering, Tax Evasion, Fraud, Organized Crime. 20 countries. DOI: 10.7910/DVN/8FXZOJ",
+  "description": "Interactive dashboard: Economic crimes in Latin America (2020-2023). Corruption, Money Laundering, Tax Evasion, Fraud, Organized Crime. 20 countries. DOI: 10.79",
+  "keywords": "corruption, dashboard, economic-crimes, harvard-dataverse, latin-america, open-data",
+  "author": "Juan Moisés de la Serna Tuya",
+  "orcid": "https://orcid.org/0000-0002-8401-8018",
+  "canonical": "https://juanmoisesd.github.io/economic-crimes-latam/",
+  "og:title": "Interactive dashboard: Economic crimes in Latin America (2020-2023). Corruption, Money Laundering, Tax Evasion, Fraud, Organized Crime. 20 countries. DOI: 10.7910/DVN/8FXZOJ",
+  "og:description": "Interactive dashboard: Economic crimes in Latin America (2020-2023). Corruption, Money Laundering, Tax Evasion, Fraud, Organized Crime. 20 countries. DOI: 10.7910/DVN/8FXZOJ",
+  "og:url": "https://juanmoisesd.github.io/economic-crimes-latam/",
+  "og:type": "dataset",
+  "twitter:card": "summary",
+  "twitter:title": "Interactive dashboard: Economic crimes in Latin America (2020-2023). Corruption, Money Laundering, Tax Evasion, Fraud, Organized Crime. 20 countries. DOI: 10.7910/DVN/8FXZOJ",
+  "twitter:description": "Interactive dashboard: Economic crimes in Latin America (2020-2023). Corruption, Money Laundering, Tax Evasion, Fraud, Organized Crime. 20 countries. DOI: 10.79",
+  "schema_type": "Dataset",
+  "license": "CC0-1.0",
+  "datePublished": "2026-03-20",
+  "language": "es, en"
+}
