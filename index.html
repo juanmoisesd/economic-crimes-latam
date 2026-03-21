@@ -1,55 +1,62 @@
-<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Dashboard interactivo: Delitos Económicos en América Latina 2020-2023. Corrupción CPI, Lavado de Dinero, Evasión Fiscal, Fraude, Crimen Organizado. 20 países. DOI:10.7910/DVN/HSSJ0O"><meta name="keywords" content="delitos económicos, América Latina, corrupción, lavado de dinero, evasión fiscal, fraude, crimen organizado, CPI, FATF"><title>Delitos Económicos en América Latina (2020-2023) | Dashboard Interactivo</title><script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script><style>*{box-sizing:border-box;margin:0;padding:0}body{background:#0d1117;color:#e0e0e0;font-family:'Segoe UI',Arial,sans-serif}.c{max-width:1100px;margin:0 auto;padding:18px}h1{font-size:1.9em;margin-bottom:8px}h2{font-size:1.4em;margin:22px 0 10px;padding-bottom:5px;border-bottom:2px solid currentColor}h3{font-size:1.05em;margin:14px 0 7px}p{line-height:1.7;color:#ccc;margin-bottom:9px}.kg{display:grid;grid-template-columns:repeat(auto-fit,minmax(155px,1fr));gap:11px;margin:16px 0}.k{background:#161b22;border-radius:7px;padding:14px;text-align:center;border-top:4px solid}.k .v{font-size:2.1em;font-weight:bold}.k .l{color:#aaa;font-size:0.78em;margin-top:3px}.cb{background:#161b22;border-radius:7px;padding:16px;margin:16px 0;border:1px solid #30363d}.ab{background:#161b22;border-left:4px solid #e74c3c;padding:16px;border-radius:5px;margin:16px 0}.ab p{color:#ddd}.tag{display:inline-block;border-radius:20px;padding:3px 9px;font-size:0.77em;margin:3px;color:white}.cit{background:#161b22;border-radius:5px;padding:16px;margin:22px 0}.cit code{background:#0d1117;color:#e2b96f;padding:7px;display:block;border-radius:3px;font-size:0.79em;margin:5px 0;white-space:pre-wrap}table{width:100%;border-collapse:collapse;margin:14px 0;font-size:0.88em}th{background:#e74c3c;color:white;padding:8px;text-align:left}td{padding:6px 8px;border-bottom:1px solid #30363d;color:#ccc}tr:nth-child(even){background:#161b22}footer{background:#0d1117;padding:16px;text-align:center;color:#666;font-size:0.8em;margin-top:25px}footer a{color:#e74c3c;text-decoration:none}h2{color:#e74c3c}.k{border-top-color:#e74c3c}.k .v{color:#ff8a80}.tag{background:#e74c3c}nav{font-size:0.8em}.hero{background:linear-gradient(135deg,#1a0008,#3d0015,#600020);padding:40px 20px;text-align:center}.hero h1{font-size:2.2em;color:#fff;margin-bottom:10px}.hero p{color:#ffcccc;font-size:1em;max-width:800px;margin:0 auto 15px}.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0}.tab-btn{background:#161b22;border:1px solid #30363d;color:#ccc;padding:8px 14px;border-radius:5px;cursor:pointer;font-size:0.85em}.tab-btn.active,.tab-btn:hover{background:#e74c3c;color:white;border-color:#e74c3c}</style></head><body><nav style="background:#0d1117;padding:8px 16px;display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:0.82em;border-bottom:2px solid #c0392b"><a href="index.html" style="color:#e74c3c;font-weight:bold;text-decoration:none">🏠 Dashboard</a><span style="color:#333">|</span><a href="corrupcion.html" style="color:#aaa;text-decoration:none">Corrupción</a><a href="lavado.html" style="color:#aaa;text-decoration:none">Lavado</a><a href="evasion.html" style="color:#aaa;text-decoration:none">Evasión Fiscal</a><a href="fraude.html" style="color:#aaa;text-decoration:none">Fraude</a><a href="crimen-organizado.html" style="color:#aaa;text-decoration:none">Crimen Org.</a><span style="color:#333">|</span><a href="cono-sur.html" style="color:#aaa;text-decoration:none">Cono Sur</a><a href="andina.html" style="color:#aaa;text-decoration:none">Andina</a><a href="centroamerica.html" style="color:#aaa;text-decoration:none">Centroam.</a><a href="caribe.html" style="color:#aaa;text-decoration:none">Caribe</a><span style="color:#333">|</span><a href="argentina.html" style="color:#aaa;text-decoration:none">AR</a><a href="brasil.html" style="color:#aaa;text-decoration:none">BR</a><a href="chile.html" style="color:#aaa;text-decoration:none">CL</a><a href="colombia.html" style="color:#aaa;text-decoration:none">CO</a><a href="mexico.html" style="color:#aaa;text-decoration:none">MX</a><a href="venezuela.html" style="color:#aaa;text-decoration:none">VE</a><a href="peru.html" style="color:#aaa;text-decoration:none">PE</a><a href="bolivia.html" style="color:#aaa;text-decoration:none">BO</a><a href="paraguay.html" style="color:#aaa;text-decoration:none">PY</a><a href="guatemala.html" style="color:#aaa;text-decoration:none">GT</a><span style="color:#333">|</span><a href="tendencias.html" style="color:#aaa;text-decoration:none">Tendencias</a><a href="inequidad.html" style="color:#aaa;text-decoration:none">Inequidad</a><a href="methodology.html" style="color:#aaa;text-decoration:none">Metodología</a><a href="data.html" style="color:#aaa;text-decoration:none">Datos</a><a href="sitemap.html" style="color:#aaa;text-decoration:none">Sitemap</a></nav><div class="hero"><div style="font-size:2.5em;margin-bottom:8px">🔍</div><h1>Delitos Económicos en América Latina</h1><p>Base de datos interactiva: Corrupción, Lavado de Dinero, Evasión Fiscal, Fraude y Crimen Organizado en 20 países (2020-2023)</p><div><span class="tag">20 países</span><span class="tag">4 años</span><span class="tag">5 categorías</span><span class="tag">Harvard Dataverse</span><span class="tag">DOI:10.7910/DVN/HSSJ0O</span></div></div><div class="c"><div style="background:#161b22;border-left:4px solid #e74c3c;padding:16px;border-radius:5px;margin:16px 0"><h3>Abstract del Mini-Paper</h3><p>Este dataset recopila estadísticas y estimaciones sobre delitos económicos en 20 países de América Latina para el período 2020-2023. Incluye: (1) Corrupción medida por el Índice CPI de Transparencia Internacional (escala 0-100, mayor=menos corrupto); (2) Evasión Fiscal como % del PIB (GFI/BID); (3) Nivel de Riesgo de Lavado de Dinero (FATF/GAFI, escala 1-4); (4) Fraude y Estafas como % de empresas afectadas (PwC Global Economic Crime Survey); (5) Crimen Organizado Económico con tasas de homicidios relacionados por 100.000 hab. (UNODC).</p><p><strong>Palabras clave:</strong> corrupción, lavado de dinero, evasión fiscal, fraude, crimen organizado, América Latina, CPI, FATF, UNODC</p></div><div class="kg"><div class="k"><div class="v">20</div><div class="l">Países incluidos</div></div><div class="k"><div class="v">2020-23</div><div class="l">Período de análisis</div></div><div class="k"><div class="v">5</div><div class="l">Categorías de delito</div></div><div class="k"><div class="v">Uruguay</div><div class="l">Menor corrupción CPI=72</div></div><div class="k"><div class="v">Venezuela</div><div class="l">Mayor corrupción CPI=13</div></div><div class="k"><div class="v">Haití</div><div class="l">Mayor crimen org. 80/100k</div></div></div><h2>📊 Ranking CPI 2023: Índice de Percepción de Corrupción</h2><div class="cb"><div id="c-cpi" style="height:480px"></div></div><h2>💰 Evasión Fiscal 2023: % del PIB estimado</h2><div class="cb"><div id="c-tax" style="height:480px"></div></div><h2>🔄 Tendencia Regional CPI 2020-2023 (promedio por región)</h2><div class="cb"><div id="c-trend" style="height:380px"></div></div><h2>🗺️ Mapa: Nivel de Riesgo Lavado de Dinero (2023)</h2><div class="cb"><div id="c-scatter" style="height:400px"></div></div><h2>⚖️ Correlación: Corrupción (CPI) vs. Evasión Fiscal</h2><div class="cb"><div id="c-corr" style="height:400px"></div></div><h2>🔍 Comparativa 2020-2023: Evolución del CPI por país</h2><div class="cb"><div id="c-heatmap" style="height:500px"></div></div><h2>🔗 Explorar por Categoría</h2><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:16px 0"><a href="corrupcion.html" style="background:#161b22;border:2px solid #e74c3c;border-radius:8px;padding:16px;text-decoration:none;display:block;text-align:center"><div style="font-size:2em">🏛️</div><div style="color:#e74c3c;font-weight:bold;margin-top:8px">Corrupción</div><div style="color:#aaa;font-size:0.85em">Índice CPI por país y año</div></a><a href="lavado.html" style="background:#161b22;border:2px solid #9b59b6;border-radius:8px;padding:16px;text-decoration:none;display:block;text-align:center"><div style="font-size:2em">💸</div><div style="color:#9b59b6;font-weight:bold;margin-top:8px">Lavado de Dinero</div><div style="color:#aaa;font-size:0.85em">Riesgo FATF/GAFI</div></a><a href="evasion.html" style="background:#161b22;border:2px solid #f39c12;border-radius:8px;padding:16px;text-decoration:none;display:block;text-align:center"><div style="font-size:2em">📊</div><div style="color:#f39c12;font-weight:bold;margin-top:8px">Evasión Fiscal</div><div style="color:#aaa;font-size:0.85em">% PIB no declarado</div></a><a href="fraude.html" style="background:#161b22;border:2px solid #27ae60;border-radius:8px;padding:16px;text-decoration:none;display:block;text-align:center"><div style="font-size:2em">🎭</div><div style="color:#27ae60;font-weight:bold;margin-top:8px">Fraude y Estafas</div><div style="color:#aaa;font-size:0.85em">% empresas afectadas</div></a><a href="crimen-organizado.html" style="background:#161b22;border:2px solid #e67e22;border-radius:8px;padding:16px;text-decoration:none;display:block;text-align:center"><div style="font-size:2em">⚔️</div><div style="color:#e67e22;font-weight:bold;margin-top:8px">Crimen Organizado</div><div style="color:#aaa;font-size:0.85em">Homicidios económicos/100k</div></a></div><div class="cit"><h3 style="color:#e74c3c;margin-bottom:8px">📎 Cómo Citar</h3><p style="color:#ccc;font-size:0.83em">APA 7ª:</p><code>de la Serna, J. M. (2026). Delitos Económicos por Categoría en América Latina (2020-2023): Corrupción, Lavado de Dinero, Fraude, Evasión Fiscal y Crimen Organizado. Harvard Dataverse. https://doi.org/10.7910/DVN/HSSJ0O</code><p style="color:#ccc;font-size:0.83em">BibTeX:</p><code>@dataset{delaserna2026delitos,author={de la Serna,J.M.},title={Delitos Económicos en América Latina 2020-2023},year={2026},publisher={Harvard Dataverse},doi={10.7910/DVN/HSSJ0O}}</code></div></div><footer><p>DOI: <a href="https://doi.org/10.7910/DVN/HSSJ0O">10.7910/DVN/HSSJ0O</a> | Juan Moises de la Serna | UNIR | <a href="index.html">Dashboard</a> | CC0 1.0 | Harvard Dataverse</p></footer><script>
-const D=[
-['Argentina','Cono Sur',2020,42,3.5,2,32,2,5.0],['Argentina','Cono Sur',2021,38,3.8,2,35,2,5.1],['Argentina','Cono Sur',2022,38,4.0,2,34,2,4.9],['Argentina','Cono Sur',2023,37,4.2,2,36,2,5.0],
-['Brasil','Cono Sur',2020,38,3.2,3,38,3,22.4],['Brasil','Cono Sur',2021,38,3.0,3,40,3,21.1],['Brasil','Cono Sur',2022,38,2.8,3,42,3,20.4],['Brasil','Cono Sur',2023,36,2.9,3,41,3,21.0],
-['México','México',2020,31,3.8,3,45,4,29.1],['México','México',2021,31,3.5,3,46,4,27.3],['México','México',2022,31,3.2,3,44,4,25.9],['México','México',2023,31,3.4,3,43,4,24.8],
-['Colombia','Andina',2020,39,2.8,3,40,4,24.4],['Colombia','Andina',2021,39,2.5,3,38,4,24.1],['Colombia','Andina',2022,39,2.6,3,39,4,25.0],['Colombia','Andina',2023,38,2.7,3,37,4,24.6],
-['Chile','Cono Sur',2020,67,1.8,1,22,1,5.7],['Chile','Cono Sur',2021,67,1.9,1,24,1,6.3],['Chile','Cono Sur',2022,67,2.0,1,25,1,6.5],['Chile','Cono Sur',2023,63,2.1,1,26,1,7.1],
-['Perú','Andina',2020,38,3.5,3,35,3,8.0],['Perú','Andina',2021,36,3.3,3,33,3,8.2],['Perú','Andina',2022,36,3.4,3,34,3,9.0],['Perú','Andina',2023,33,3.6,3,36,3,9.5],
-['Venezuela','Andina',2020,15,5.0,4,55,4,45.6],['Venezuela','Andina',2021,14,5.5,4,58,4,40.4],['Venezuela','Andina',2022,14,5.8,4,60,4,35.7],['Venezuela','Andina',2023,13,6.0,4,62,4,31.8],
-['Ecuador','Andina',2020,37,2.8,2,28,3,8.0],['Ecuador','Andina',2021,33,3.0,3,30,3,14.0],['Ecuador','Andina',2022,33,3.2,3,32,4,25.0],['Ecuador','Andina',2023,31,3.4,3,35,4,43.9],
-['Bolivia','Andina',2020,31,4.0,3,28,3,5.5],['Bolivia','Andina',2021,28,4.2,3,30,3,5.8],['Bolivia','Andina',2022,28,4.5,3,32,3,6.2],['Bolivia','Andina',2023,27,4.8,3,34,3,6.5],
-['Paraguay','Cono Sur',2020,28,4.5,4,42,4,9.5],['Paraguay','Cono Sur',2021,27,4.8,4,44,4,10.1],['Paraguay','Cono Sur',2022,26,5.0,4,46,4,10.5],['Paraguay','Cono Sur',2023,25,5.2,4,48,4,11.2],
-['Uruguay','Cono Sur',2020,71,1.5,1,18,1,8.7],['Uruguay','Cono Sur',2021,73,1.4,1,17,1,9.1],['Uruguay','Cono Sur',2022,74,1.3,1,16,1,8.8],['Uruguay','Cono Sur',2023,72,1.4,1,18,1,9.4],
-['Guatemala','Centroamérica',2020,25,4.8,4,48,4,27.0],['Guatemala','Centroamérica',2021,27,4.5,4,46,4,26.1],['Guatemala','Centroamérica',2022,24,4.7,4,47,4,17.3],['Guatemala','Centroamérica',2023,23,5.0,4,50,4,17.0],
-['Honduras','Centroamérica',2020,24,5.0,4,50,4,37.6],['Honduras','Centroamérica',2021,23,5.2,4,52,4,42.6],['Honduras','Centroamérica',2022,23,5.5,4,54,4,35.8],['Honduras','Centroamérica',2023,22,5.8,4,56,4,33.9],
-['El Salvador','Centroamérica',2020,35,3.5,3,38,4,19.7],['El Salvador','Centroamérica',2021,34,3.2,3,36,4,18.0],['El Salvador','Centroamérica',2022,33,2.8,3,32,4,7.8],['El Salvador','Centroamérica',2023,31,2.5,3,28,3,2.4],
-['Costa Rica','Centroamérica',2020,57,2.2,2,25,2,11.3],['Costa Rica','Centroamérica',2021,58,2.0,2,23,2,11.5],['Costa Rica','Centroamérica',2022,54,2.1,2,24,2,17.3],['Costa Rica','Centroamérica',2023,52,2.2,2,25,2,16.8],
-['Panamá','Centroamérica',2020,35,3.0,3,35,3,11.0],['Panamá','Centroamérica',2021,35,3.2,3,37,3,11.5],['Panamá','Centroamérica',2022,35,3.4,3,38,3,12.0],['Panamá','Centroamérica',2023,33,3.6,3,40,3,12.5],
-['Rep. Dom.','Caribe',2020,28,3.5,3,42,3,12.4],['Rep. Dom.','Caribe',2021,28,3.2,3,40,3,12.0],['Rep. Dom.','Caribe',2022,30,3.0,3,38,3,11.8],['Rep. Dom.','Caribe',2023,29,3.1,3,39,3,12.0],
-['Nicaragua','Centroamérica',2020,22,4.5,3,45,4,7.0],['Nicaragua','Centroamérica',2021,20,4.8,3,47,4,7.5],['Nicaragua','Centroamérica',2022,19,5.0,3,49,4,8.0],['Nicaragua','Centroamérica',2023,17,5.2,4,52,4,8.5],
-['Haití','Caribe',2020,18,6.0,4,65,4,50.0],['Haití','Caribe',2021,17,6.5,4,68,4,60.0],['Haití','Caribe',2022,17,7.0,4,70,4,70.0],['Haití','Caribe',2023,17,7.5,4,72,4,80.0],
-['Cuba','Caribe',2020,47,2.5,2,20,2,5.0],['Cuba','Caribe',2021,47,2.8,2,22,2,5.5],['Cuba','Caribe',2022,46,3.0,2,24,2,6.0],['Cuba','Caribe',2023,45,3.2,2,26,2,6.5]];
-
-const bg='#161b22',gc='#30363d',lb='#0d1117',fc='#e0e0e0';
-const d23=D.filter(r=>r[2]===2023);
-const pCPI=d23.map(r=>r[0]),vCPI=d23.map(r=>r[3]);
-const sortIdx=[...d23.keys()].sort((a,b)=>vCPI[b]-vCPI[a]);
-const sortP=sortIdx.map(i=>pCPI[i]),sortV=sortIdx.map(i=>vCPI[i]);
-const cpiColors=sortV.map(v=>v>=60?'#27ae60':v>=40?'#f39c12':v>=30?'#e67e22':'#e74c3c');
-Plotly.newPlot('c-cpi',[{y:sortP,x:sortV,type:'bar',orientation:'h',marker:{color:cpiColors},text:sortV.map(v=>''+v),textposition:'outside'}],
-{paper_bgcolor:bg,plot_bgcolor:bg,font:{color:fc},xaxis:{title:'CPI 2023 (0=muy corrupto, 100=muy transparente)',gridcolor:gc,range:[0,85]},yaxis:{gridcolor:gc},margin:{l:110},shapes:[{type:'line',x0:50,x1:50,y0:-0.5,y1:19.5,line:{color:'#27ae60',width:1,dash:'dot'}}]},{responsive:true,displayModeBar:false});
-
-const taxP=d23.map(r=>r[0]),taxV=d23.map(r=>r[4]);
-const taxSort=[...d23.keys()].sort((a,b)=>taxV[b]-taxV[a]);
-Plotly.newPlot('c-tax',[{y:taxSort.map(i=>taxP[i]),x:taxSort.map(i=>taxV[i]),type:'bar',orientation:'h',marker:{color:taxSort.map(i=>taxV[i]>4?'#e74c3c':taxV[i]>3?'#e67e22':'#f39c12')},text:taxSort.map(i=>taxV[i]+'%'),textposition:'outside'}],
-{paper_bgcolor:bg,plot_bgcolor:bg,font:{color:fc},xaxis:{title:'Evasión Fiscal estimada % PIB (2023)',gridcolor:gc},yaxis:{gridcolor:gc},margin:{l:110}},{responsive:true,displayModeBar:false});
-
-const regs=[...new Set(D.map(r=>r[1]))];
-const yrs=[2020,2021,2022,2023];
-Plotly.newPlot('c-trend',regs.map(reg=>({
-  x:yrs,y:yrs.map(y=>{const v=D.filter(r=>r[1]===reg&&r[2]===y).map(r=>r[3]);return v.length?(v.reduce((a,b)=>a+b,0)/v.length).toFixed(1):null;}),
-  name:reg,mode:'lines+markers',line:{width:3}
-})),{paper_bgcolor:bg,plot_bgcolor:bg,font:{color:fc},xaxis:{title:'Año',gridcolor:gc},yaxis:{title:'CPI promedio regional',gridcolor:gc},legend:{bgcolor:lb}},{responsive:true,displayModeBar:false});
-
-Plotly.newPlot('c-scatter',[{x:d23.map(r=>r[3]),y:d23.map(r=>r[4]),mode:'markers+text',text:d23.map(r=>r[0]),textposition:'top center',marker:{color:d23.map(r=>r[5]===1?'#27ae60':r[5]===2?'#f39c12':r[5]===3?'#e67e22':'#e74c3c'),size:d23.map(r=>r[8]*0.4+8),symbol:d23.map(r=>r[5]===4?'diamond':'circle')},type:'scatter'}],
-{paper_bgcolor:bg,plot_bgcolor:bg,font:{color:fc},xaxis:{title:'CPI 2023 (mayor=menos corrupto)',gridcolor:gc},yaxis:{title:'Evasión Fiscal % PIB',gridcolor:gc},title:{text:'Tamaño=homicidios/100k | Color: riesgo lavado',font:{color:'#aaa',size:11}}},{responsive:true,displayModeBar:false});
-
-Plotly.newPlot('c-corr',[{x:d23.map(r=>r[3]),y:d23.map(r=>r[6]),mode:'markers+text',text:d23.map(r=>r[0]),textposition:'top center',marker:{color:'#e74c3c',size:10},type:'scatter'}],
-{paper_bgcolor:bg,plot_bgcolor:bg,font:{color:fc},xaxis:{title:'CPI 2023',gridcolor:gc},yaxis:{title:'% empresas afectadas por fraude',gridcolor:gc}},{responsive:true,displayModeBar:false});
-
-const paises=[...new Set(D.map(r=>r[0]))].sort();
-const cpiMatrix=paises.map(p=>yrs.map(y=>D.find(r=>r[0]===p&&r[2]===y)?.[3]||null));
-Plotly.newPlot('c-heatmap',[{z:cpiMatrix,x:yrs.map(String),y:paises,type:'heatmap',colorscale:[[0,'#8B0000'],[0.3,'#e74c3c'],[0.6,'#f39c12'],[1,'#27ae60']],text:cpiMatrix.map(row=>row.map(v=>v||'')),texttemplate:'%{text}',showscale:true,colorbar:{title:'CPI'}}],
-{paper_bgcolor:bg,plot_bgcolor:bg,font:{color:fc},xaxis:{gridcolor:gc},yaxis:{gridcolor:gc},margin:{l:120}},{responsive:true,displayModeBar:false});
-</script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Interactive dashboard: Economic crimes in Latin America (2020-2023). Corruption, Money Laundering, Tax Evasion, Fraud, Organized Crime. 20 countries. DOI: 10.7910/DVN/8FXZOJ">
+  <meta name="author" content="Juan Moisés de la Serna Tuya">
+  <meta name="keywords" content="corruption, dashboard, economic-crimes, harvard-dataverse, latin-america, open-data">
+  <meta property="og:title" content="Interactive dashboard: Economic crimes in Latin America (2020-2023). Corruption, Money Laundering, Tax Evasion, Fraud, Organized Crime. 20 countries. DOI: 10.7910/DVN/8FXZOJ">
+  <meta property="og:description" content="Interactive dashboard: Economic crimes in Latin America (2020-2023). Corruption, Money Laundering, Tax Evasion, Fraud, Organized Crime. 20 countries. DOI: 10.7910/DVN/8FXZOJ">
+  <meta property="og:url" content="https://juanmoisesd.github.io/economic-crimes-latam/">
+  <title>Interactive dashboard: Economic crimes in Latin America (2020-2023). Corruption, Money Laundering, Tax Evasion, Fraud, Organized Crime. 20 countries. DOI: 10.7910/DVN/8FXZOJ</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "name": "Interactive dashboard: Economic crimes in Latin America (2020-2023). Corruption, Money Laundering, Tax Evasion, Fraud, Organized Crime. 20 countries. DOI: 10.7910/DVN/8FXZOJ",
+    "description": "Interactive dashboard: Economic crimes in Latin America (2020-2023). Corruption, Money Laundering, Tax Evasion, Fraud, Organized Crime. 20 countries. DOI: 10.7910/DVN/8FXZOJ",
+    "url": "https://github.com/juanmoisesd/economic-crimes-latam",
+    "author": {
+      "@type": "Person",
+      "name": "Juan Moisés de la Serna Tuya",
+      "identifier": "https://orcid.org/0000-0002-8401-8018"
+    },
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "datePublished": "2026-03-20",
+    "keywords": "corruption, dashboard, economic-crimes, harvard-dataverse, latin-america, open-data"
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Interactive dashboard: Economic crimes in Latin America (2020-2023). Corruption, Money Laundering, Tax Evasion, Fraud, Organized Crime. 20 countries. DOI: 10.7910/DVN/8FXZOJ</h1>
+    <p class="subtitle">Open Dataset by <a href="https://orcid.org/0000-0002-8401-8018">Juan Moisés de la Serna Tuya</a></p>
+  </header>
+  <main>
+    <section id="about">
+      <h2>About</h2>
+      <p>Interactive dashboard: Economic crimes in Latin America (2020-2023). Corruption, Money Laundering, Tax Evasion, Fraud, Organized Crime. 20 countries. DOI: 10.7910/DVN/8FXZOJ</p>
+      <ul>
+        <li><strong>Author:</strong> <a href="https://orcid.org/0000-0002-8401-8018">Juan Moisés de la Serna Tuya</a></li>
+        <li><strong>Institution:</strong> Universidad Internacional de La Rioja (UNIR)</li>
+        <li><strong>License:</strong> <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0 Universal</a></li>
+        <li><strong>Repository:</strong> <a href="https://github.com/juanmoisesd/economic-crimes-latam">GitHub</a></li>
+      </ul>
+    </section>
+    <section id="cite">
+      <h2>How to Cite</h2>
+      <code>de la Serna Tuya, J.M. (2026). Interactive dashboard: Economic crimes in Latin America (2020-2023). Corruption, Money Laundering, Tax Evasion, Fraud, Organized Crime. 20 countries. DOI: 10.7910/DVN/8FXZOJ. GitHub. https://github.com/juanmoisesd/economic-crimes-latam</code>
+    </section>
+    <section id="data">
+      <h2>Access Data</h2>
+      <a class="btn" href="https://github.com/juanmoisesd/economic-crimes-latam">View on GitHub</a>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2026 Juan Moisés de la Serna Tuya | <a href="https://orcid.org/0000-0002-8401-8018">ORCID</a> | <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a></p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
