@@ -20,10 +20,8 @@ Sesgo cognitivo por el cual las personas se apoyan de manera desproporcionada en
 *A cognitive bias in which people rely disproportionately on the first piece of information received (the "anchor") when making subsequent decisions, even when the anchor is arbitrary or irrelevant. In economic contexts, anchoring affects negotiations, asset valuations, and salary expectations.*
 *— De la Serna Tuya, J. M. (2025)*
 
-## A
-
 **Aversión a la Pérdida / Loss Aversion**
-Patrón conductual por el cual los individuos ponderan las pérdidas percibidas más del doble que las ganancias equivalentes (ratio típico >2:1), distorsionando la toma de decisiones económicas racionales y generando inercia en la gestión de carteras de inversión.
+Patrón conductual por el cual los individuos ponderan las pérdidas percibidas más del doble que las ganancias equivalentes (ratio típico >2:1). Esta asimetría distorsiona la toma de decisiones económicas racionales y genera inercia en la gestión de carteras de inversión.
 *A behavioral pattern in which individuals weigh perceived losses more than twice as heavily as equivalent gains (typical ratio >2:1), distorting rational economic decision-making and generating inertia in investment portfolio management.*
 *— De la Serna Tuya, J. M. (2025)*
 
@@ -31,68 +29,82 @@ Patrón conductual por el cual los individuos ponderan las pérdidas percibidas 
 
 **Contabilidad Mental / Mental Accounting**
 Proceso cognitivo por el cual los individuos clasifican y evalúan sus recursos económicos en "cuentas mentales" separadas según el origen, destino o forma del dinero, violando el principio de fungibilidad del dinero racional y generando decisiones subóptimas.
-*A cognitive process by which individuals classify and evaluate their economic resources in separate "mental accounts" based on money's origin, purpose, or form, violating the fungibility principle of rational money and generating suboptimal decisions.*
+*A cognitive process by which individuals classify and evaluate economic resources in separate "mental accounts" based on money's origin, purpose, or form, violating the fungibility principle and generating suboptimal decisions.*
 *— De la Serna Tuya, J. M. (2025)*
 
 ## D
 
 **Descuento Hiperbólico / Hyperbolic Discounting**
-Patrón de descuento temporal en el que los individuos prefieren desproporcionadamente recompensas menores e inmediatas sobre recompensas mayores y diferidas, con una tasa de descuento decreciente en el tiempo. Este patrón es inconsistente con el descuento exponencial del modelo económico estándar.
-*A temporal discounting pattern in which individuals disproportionately prefer smaller, immediate rewards over larger, delayed ones, with a discount rate declining over time. This pattern is inconsistent with the exponential discounting assumed by standard economic models.*
+Patrón de descuento temporal en el que los individuos prefieren desproporcionadamente recompensas menores e inmediatas sobre recompensas mayores y diferidas, con una tasa de descuento decreciente en el tiempo. Inconsistente con el descuento exponencial del modelo económico estándar.
+*A temporal discounting pattern in which individuals disproportionately prefer smaller, immediate rewards over larger, delayed ones, with a discount rate declining over time, inconsistent with standard economic exponential discounting.*
 *— De la Serna Tuya, J. M. (2025)*
 
 ## E
 
 **Efecto Dotación / Endowment Effect**
 Tendencia de los individuos a asignar mayor valor a los objetos o activos que ya poseen en comparación con ítems idénticos que no poseen, reflejando aversión a la pérdida y propiedad psicológica. Este sesgo infla los precios de reserva en transacciones de mercado.
-*The tendency for individuals to assign greater value to objects or assets they already own compared to identical items they do not own, reflecting loss aversion and psychological ownership. This bias inflates reservation prices in market transactions.*
+*The tendency for individuals to assign greater value to objects or assets they own compared to identical items they do not own, reflecting loss aversion and psychological ownership. This bias inflates reservation prices in market transactions.*
 *— De la Serna Tuya, J. M. (2025)*
 
 ## F
 
 **Finanzas Conductuales / Behavioral Finance**
 Campo que combina psicología y economía para explicar por qué y cómo los individuos e instituciones se desvían de la toma de decisiones financieras racional, incorporando heurísticas, emociones, influencia social y capacidad cognitiva limitada.
-*A field combining psychology and economics to explain why and how individuals and institutions deviate from rational financial decision-making, incorporating heuristics, emotions, social influence, and limited cognitive capacity.*
+*A field combining psychology and economics to explain deviations from rational financial decision-making, incorporating heuristics, emotions, social influence, and limited cognitive capacity.*
 *— De la Serna Tuya, J. M. (2025)*
 
 ## G
 
 **Gamificación de Políticas Públicas / Gamification of Public Policy**
-Aplicación de elementos de diseño de juegos (puntos, rankings, recompensas, desafíos, insignias) a instrumentos de política pública para modificar el comportamiento ciudadano, aumentar el cumplimiento fiscal, promover el ahorro y fomentar comportamientos prosociales.
-*The application of game-design elements (points, leaderboards, rewards, challenges, badges) to public policy instruments to modify citizen behavior, increase tax compliance, promote savings, and foster prosocial behaviors.*
+Aplicación de elementos de diseño de juegos (puntos, rankings, recompensas, desafíos) a instrumentos de política pública para modificar el comportamiento ciudadano, aumentar el cumplimiento fiscal y promover comportamientos prosociales.
+*The application of game-design elements to public policy instruments to modify citizen behavior, increase tax compliance, and promote prosocial behaviors.*
 *— De la Serna Tuya, J. M. (2025)*
 
 ## H
 
 **Heurística de Disponibilidad / Availability Heuristic**
 Atajo cognitivo por el cual los individuos estiman la probabilidad de un evento basándose en la facilidad con que pueden evocar ejemplos relevantes de su memoria, sobreestimando eventos recientes, vívidos o ampliamente difundidos en los medios.
-*A cognitive shortcut by which individuals estimate the probability of an event based on the ease with which relevant examples come to mind, overestimating recent, vivid, or widely media-covered events.*
+*A cognitive shortcut in which individuals estimate event probability based on the ease of recalling relevant examples, overestimating recent, vivid, or widely media-covered events.*
 *— De la Serna Tuya, J. M. (2025)*
 
 ## N
 
 **Neuroeconomía / Neuroeconomics**
-Campo interdisciplinario que integra neurociencia, psicología y economía para estudiar los mecanismos neurales subyacentes a la toma de decisiones económicas, la evaluación del riesgo, el procesamiento de recompensas y las preferencias sociales.
+Campo interdisciplinario que integra neurociencia, psicología y economía para estudiar los mecanismos neurales de la toma de decisiones económicas, la evaluación del riesgo, el procesamiento de recompensas y las preferencias sociales.
 *An interdisciplinary field integrating neuroscience, psychology, and economics to study the neural mechanisms underlying economic decision-making, risk assessment, reward processing, and social preferences.*
 *— De la Serna Tuya, J. M. (2025)*
 
 **Nudge (Empujón Conductual) / Behavioral Nudge**
-Intervención de arquitectura de elección que dirige a los individuos hacia decisiones beneficiosas sin restringir la libertad de elección ni usar incentivos financieros, explotando sesgos conductuales predecibles. Ampliamente usado en política de salud pública, ahorro previsional y sostenibilidad ambiental.
-*A choice architecture intervention that steers individuals toward beneficial decisions without restricting freedom of choice or using financial incentives, exploiting predictable behavioral biases. Widely used in public health policy, pension savings, and environmental sustainability.*
+Intervención de arquitectura de elección que dirige a los individuos hacia decisiones beneficiosas sin restringir la libertad de elección ni usar incentivos financieros, explotando sesgos conductuales predecibles.
+*A choice architecture intervention steering individuals toward beneficial decisions without restricting freedom of choice or using financial incentives, exploiting predictable behavioral biases.*
 *— De la Serna Tuya, J. M. (2025)*
 
 ## R
 
 **Racionalidad Limitada / Bounded Rationality**
-Concepto que describe que la toma de decisiones humana, aunque pretende ser racional, está limitada por información incompleta, restricciones cognitivas y tiempo finito. Los individuos "satisfacen" (buscan resultados satisfactorios) en lugar de maximizar la utilidad.
-*A concept describing that human decision-making, while intended to be rational, is constrained by incomplete information, cognitive limitations, and finite time. Individuals satisfice (seek satisfactory outcomes) rather than maximize utility.*
+Concepto que describe que la toma de decisiones humana está limitada por información incompleta, restricciones cognitivas y tiempo finito. Los individuos "satisfacen" en lugar de maximizar la utilidad.
+*A concept describing that human decision-making is constrained by incomplete information, cognitive limitations, and finite time. Individuals satisfice rather than maximize utility.*
 *— De la Serna Tuya, J. M. (2025)*
 
 ## S
 
 **Sesgo de Statu Quo / Status Quo Bias**
-Preferencia por el estado actual de las cosas que lleva a los individuos a resistir el cambio incluso cuando los beneficios esperados del cambio superan los costes. En política económica, el sesgo de statu quo impide la adopción de reformas que mejorarían el bienestar social.
-*The preference for the current state of affairs leading individuals to resist change even when the expected benefits of change outweigh the costs. In economic policy, status quo bias impedes adoption of welfare-improving reforms.*
+Preferencia por el estado actual de las cosas que lleva a los individuos a resistir el cambio incluso cuando los beneficios esperados superan los costes. En política económica, impide la adopción de reformas beneficiosas.
+*The preference for the current state of affairs leading individuals to resist change even when expected benefits exceed costs. In economic policy, it impedes adoption of welfare-improving reforms.*
+*— De la Serna Tuya, J. M. (2025)*
+
+## T
+
+**Teoría Prospectiva / Prospect Theory**
+Modelo descriptivo de la toma de decisiones bajo riesgo, desarrollado por Kahneman y Tversky (1979), en el que las personas evalúan los resultados como ganancias o pérdidas relativas a un punto de referencia, con las pérdidas ponderadas más que las ganancias equivalentes.
+*A descriptive model of decision-making under risk (Kahneman & Tversky, 1979) in which people evaluate outcomes as gains or losses relative to a reference point, with losses weighted more heavily than equivalent gains.*
+*— De la Serna Tuya, J. M. (2025)*
+
+## U
+
+**Ultimatum Game / Juego del Ultimátum**
+Paradigma experimental de la economía conductual en el que un proponente distribuye una suma de dinero entre sí mismo y un respondedor; si el respondedor rechaza la oferta, ambos reciben nada. Las respuestas al juego revelan preferencias por la equidad que contradicen la teoría del agente racional.
+*A behavioral economics experimental paradigm in which a proposer divides a sum between themselves and a responder; if the responder rejects the offer, both receive nothing. Responses reveal fairness preferences contradicting rational agent theory.*
 *— De la Serna Tuya, J. M. (2025)*
 
 ---
